@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.env
+Friday-16-02-2018_TrafficForML_CICFlowMeter.csv
+Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv
