@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Breach Shield</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SYSTEM HEADER -->
+    <header class="system-header">
+        <div>
+            <h1>Breach Shield</h1>
+            <p>AI-Powered Network Monitoring & Threat Prediction System</p>
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </header>
+
+
+    <!-- MAIN SYSTEM DASHBOARD -->
+    <main class="dashboard">
+
+        <!-- SUMMARY CARDS -->
+        <section class="summary-cards">
+
+            <div class="card">
+                <h3>Network Status</h3>
+                <p class="value">Normal</p>
+                <span>Live monitoring</span>
+            </div>
+
+            <div class="card">
+                <h3>Threat Level</h3>
+                <p class="value">Low</p>
+                <span>Current risk</span>
+            </div>
+
+            <div class="card">
+                <h3>Active Incidents</h3>
+                <p class="value">0</p>
+                <span>Requires attention</span>
+            </div>
+
+            <div class="card">
+                <h3>AI Confidence</h3>
+                <p class="value">--</p>
+                <span>Prediction engine</span>
+            </div>
+
+        </section>
+
+
+        <!-- NETWORK BEHAVIOUR -->
+        <section class="panel">
+            <div class="panel-header">
+                <h2>Network Behaviour</h2>
+                <span>Real-time analysis</span>
+            </div>
+
+            <div id="network-chart" class="chart-placeholder">
+                Network behaviour chart will appear here
+            </div>
+        </section>
+
+
+        <!-- THREAT PREDICTION -->
+    <section class="two-column">
+
+    <div class="panel">
+        <div class="panel-header">
+            <h2>Attack Prediction</h2>
+            <span>AI World Model</span>
+        </div>
+
+        <div class="prediction-box">
+            <p>Predicted next activity</p>
+            <h3 id="predicted-attack">No prediction available</h3>
+
+            <p>Confidence</p>
+            <div class="confidence">
+                <span id="confidence-value">--</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">
+            <h2>Explainable AI</h2>
+            <span>Prediction Reasoning</span>
+        </div>
+
+        <div class="xai-box">
+            <p>Why was this prediction made?</p>
+
+            <div class="xai-item">
+                <span>Flow Activity</span>
+                <strong id="xai-flow">--</strong>
+            </div>
+
+            <div class="xai-item">
+                <span>Packet Behaviour</span>
+                <strong id="xai-packets">--</strong>
+            </div>
+
+            <div class="xai-item">
+                <span>Destination Ports</span>
+                <strong id="xai-ports">--</strong>
+            </div>
+
+            <div class="xai-item">
+                <span>Attack Pattern</span>
+                <strong id="xai-pattern">--</strong>
+            </div>
+
+            <p class="xai-reason" id="xai-reason">
+                Waiting for prediction data...
+            </p>
+        </div>
+    </div>
+</section>
+
+            <!-- INCIDENT RESPONSE -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>Incident Response</h2>
+                    <span>Automated response</span>
+                </div>
+
+                <div class="response-box">
+                    <p>Status</p>
+                    <h3 id="incident-status">No active incident</h3>
+
+                    <button id="investigate-btn">
+                        Investigate
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- MITRE ATT&CK -->
+        <section class="panel">
+
+            <div class="panel-header">
+                <h2>MITRE ATT&CK Mapping</h2>
+                <span>Threat intelligence</span>
+            </div>
+
+            <div class="attack-technique">
+
+                <div>
+                    <p>Detected / Predicted Technique</p>
+                    <h3 id="mitre-technique">
+                        No technique detected
+                    </h3>
+                </div>
+
+                <div>
+                    <p>Tactic</p>
+                    <h3 id="mitre-tactic">
+                        --
+                    </h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT EVENTS -->
+        <section class="panel">
+
+            <div class="panel-header">
+                <h2>Recent Network Events</h2>
+                <span>Event correlation</span>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Risk</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="events-table">
+
+                    <tr>
+                        <td>--:--</td>
+                        <td>No events available</td>
+                        <td>--</td>
+                        <td>Waiting</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Predictive Network Defence System | Cybersecurity & AI</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
