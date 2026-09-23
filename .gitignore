@@ -5,3 +5,5 @@ __pycache__/
 .env
 Friday-16-02-2018_TrafficForML_CICFlowMeter.csv
 Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv
+*.save
+pcap.zip
